@@ -1,0 +1,18 @@
+#footer
+{
+    overflow: hidden;
+    width: 50%;
+    margin: 100px auto 10px auto;
+}
+
+img.arkdes_logo
+{
+    width: 70%;
+    margin: 0 15% 0 15%;
+}
+
+#footer p
+{
+    text-align: center;
+    margin: 10px 0 10px 0;
+}

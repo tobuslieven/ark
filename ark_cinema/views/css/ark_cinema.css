@@ -1,0 +1,52 @@
+@CHARSET "UTF-8";
+
+div.ark_cinema
+{
+    overflow: hidden;
+}
+
+div.ark_cinema_hider
+{
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+div.ark_youtube_container
+{
+    position: relative;
+    height: 0;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+}
+
+div.ark_youtube_container iframe
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* Ark Hider Button Image */
+img.ark_cinema_open_button, img.ark_cinema_close_button
+{
+    width: 10%;
+    margin: 0 auto 10px auto;
+    /*display: block;*/
+    display: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+@media (max-width:480px)
+{
+    div.ark_hider_button
+    {
+        width: 15%;
+    }
+}

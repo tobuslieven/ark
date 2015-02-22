@@ -1,0 +1,21 @@
+@CHARSET "UTF-8";
+
+#messages
+{
+	border: 1px dashed black;
+}
+
+#messages div.message_label
+{
+	color: blue;
+}
+
+li.message
+{
+	border-bottom: 1px dashed black;
+}
+
+#messages div.message_label:hover
+{
+	color: #444;
+}

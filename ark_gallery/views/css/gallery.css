@@ -1,0 +1,157 @@
+@CHARSET "UTF-8";
+
+div.ark_gallery
+{
+    overflow: hidden;
+    width: 100%;
+}
+
+a.ark_gallery
+{
+    display: block;
+    width: 18.75%;
+    float: left;
+    margin: 0 0 15px 5%;
+    background-color: #efefef;
+    box-shadow: inset 2px 2px 3px #333;
+}
+
+a.ark_gallery.first_of_set
+{
+    clear:left;
+}
+
+img.ark_gallery
+{
+    margin:7%;
+    width:86%;
+    box-shadow: 2px 2px 3px #333;
+}
+
+@media (max-width:480px)
+{
+    a.screen_shot
+    {
+        width:42.5%;
+    }
+}
+
+/*** Image Viewer ***/
+#ark_viewer
+{
+    display:none;
+    /* border-radius:20px; */
+    position:fixed;
+    z-index:10;
+    left:50%;
+    top:50%;
+    /*
+       Left and top margins, width and height are set by the javascript which
+       displays this image viewer, based on the dimensions of the preview and
+       once loaded of the full sized image.
+    */
+
+    /* background-color:rgba(0, 0, 0, 0.8); */
+    border:10px solid rgba(255, 255, 255, 0.8);
+    box-shadow:5px 5px 3px rgba(0, 0, 0, 0.8);
+
+    /* border-radius:20px; */
+}
+
+#ark_viewer .viewed_image
+{
+    /* border-radius:10px; */
+    z-index:10;
+    position:absolute;
+    width:100%;
+    box-shadow:2px 2px 3px #333;
+
+    /* border-radius:10px; */
+}
+
+/* Background */
+#ark_viewer .background
+{
+    /* border-radius:10px; */
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    background-color:rgba(0, 0, 0, 0.8);
+}
+
+/* Spinner */
+#ark_viewer .loadingSpinner
+{
+    z-index:5;
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin-top:-18px;
+    margin-left:-18px;
+}
+
+/* Viewer Forward Button  */
+#ark_viewer .forward_button
+{
+    display:none;
+    z-index:15;
+    position:absolute;
+    left:100%;
+    top:50%;
+    width:60px;
+    height:75px;
+    margin-left:-60px;
+    margin-top:-37.5px;
+
+    opacity:0.5;
+    cursor:pointer;
+}
+
+#ark_viewer .forward_button:hover
+{
+    opacity:1.0;
+}
+
+/* Viewer Back Button */
+#ark_viewer .back_button
+{
+    display:none;
+    z-index:15;
+    position:absolute;
+    left:0;
+    top:50%;
+    width:60px;
+    height:75px;
+    margin-top:-37.5px;
+
+    opacity:0.5;
+    cursor:pointer;
+}
+
+#ark_viewer .back_button:hover
+{
+    opacity:1.0;
+}
+
+/* Viewer Close Button */
+#ark_viewer .close_button
+{
+    z-index:15;
+    position:absolute;
+    right:0;
+    top:0;
+    width:25px;
+    height:25px;
+    /* margin:5px; */
+    padding:5px;
+
+    opacity:0.5;
+    cursor:pointer;
+}
+
+#ark_viewer .close_button:hover
+{
+    opacity:1.0;
+}

@@ -1,0 +1,19 @@
+
+RewriteEngine on
+
+# This mvc framework installation isn't in the web root, so I specify the path
+# from the webroot to this installation as the RewriteBase.
+#RewriteBase /ark/
+
+#DirectoryIndex index.php
+
+# Don't rewrite if the request starts with index.php, or if it's a .css file.
+RewriteCond $1 !(\.css|\.js|\.jpg|\.png|\.gif|\.ttf)$
+#RewriteCond $1 !^(index\.php)
+#RewriteRule ^(.*)$ index.php/$1 
+
+# This is kinda weird, the following shouldn't work, but it does. I don't get 
+# how the rest of the query is getting passed along, but it appears to be.
+# It's kinda like this makes the pages.php script run, but it's the
+# original query that reaches the script in the $_SERVER variable.
+RewriteRule ^(.*)$ index.php [L]

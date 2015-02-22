@@ -1,0 +1,305 @@
+@CHARSET "UTF-8";
+
+/*
+    This css file is for non page specific styles, either for the
+    main_content div or that should be shared by all sections.
+*/
+
+@font-face
+{
+    font-family: 'optimusprincepsregular';
+    src: url('../fonts/optimusprinceps-webfont.eot');
+    src: url('../fonts/optimusprinceps-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/optimusprinceps-webfont.woff') format('woff'),
+    url('../fonts/optimusprinceps-webfont.ttf') format('truetype'),
+    url('../fonts/optimusprinceps-webfont.svg#optimusprincepsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body
+{
+    background-position: center top;
+    background-image: url(../images/bgSquareDark_1.png);
+    background-color: #181818;
+    background-size: 64px;
+    color: #fafafa;
+    font-size: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+    word-spacing: 4px;
+}
+
+/*** Container ***/
+#container
+{
+    max-width: 640px;
+    background-image: url(../images/bgSquareLight_1.png);
+    background-size: 10%;
+    background-position-x: 50%;
+    margin: 0 auto 0 auto;
+    overflow: hidden;
+}
+
+p
+{
+    font-size: 0.7em;
+}
+
+a.email
+{
+    color: #888;
+    text-decoration: none;
+}
+
+a.email:hover
+{
+    color: #49f;
+}
+
+/**************/
+/*** Header ***/
+/**************/
+/* See my_layout/views/css/header.css */
+
+/********************/
+/*** Main Content ***/
+/********************/
+#main_content
+{
+    overflow: hidden;
+}
+
+#main_content h1, #main_content h2
+{
+    font-family: optimusprincepsregular;
+    font-size: 1.63em;
+    word-spacing: 5px;
+    text-align: center;
+    width: 95%;
+    margin: 0 auto 10px auto;
+    clear: left;
+}
+
+#main_content h2
+{
+    font-size: 1.0em;
+}
+
+#main_content p
+{
+    width: 42.5%;
+    margin: 0 0 10px 5%;
+    float: left;
+}
+
+
+/**************/
+/*** Footer ***/
+/**************/
+/* See my_layout/views/css/footer.css
+
+
+/* Responsive Text Sizing */
+/* Ignore sizes larger than the max width of the container. */
+
+/*@media (max-width: 1000px) {*/
+/*body*/
+/*{*/
+/*font-size: 39px;*/
+/*}*/
+/*}*/
+
+/*@media (max-width: 975px) {*/
+/*body*/
+/*{*/
+/*font-size: 35px;*/
+/*}*/
+/*}*/
+
+/*@media (max-width: 950px) {*/
+/*body*/
+/*{*/
+/*font-size: 38px;*/
+/*}*/
+/*}*/
+
+/*@media (max-width: 925px) {*/
+/*body*/
+/*{*/
+/*font-size: 37px;*/
+/*}*/
+/*}*/
+/*@media (max-width: 900px) {*/
+/*body*/
+/*{*/
+/*font-size: 36px;*/
+/*}*/
+/*}*/
+
+/*@media (max-width: 875px) {*/
+/*body*/
+/*{*/
+/*font-size: 35px;*/
+/*}*/
+/*}*/
+
+/*@media (max-width:850px) {*/
+/*body*/
+/*{*/
+/*font-size:34px;*/
+/*}*/
+/*}*/
+
+/*@media (max-width: 825px) {*/
+/*body*/
+/*{*/
+/*font-size: 33px;*/
+/*}*/
+/*}*/
+
+/*@media (max-width: 800px) {*/
+/*body*/
+/*{*/
+/*font-size: 32px;*/
+/*}*/
+/*}*/
+
+/*@media (max-width: 775px) {*/
+/*body*/
+/*{*/
+/*font-size: 31px;*/
+/*}*/
+/*}*/
+
+/*@media (max-width: 750px) {*/
+/*body*/
+/*{*/
+/*font-size: 30px;*/
+/*}*/
+/*}*/
+
+/*@media (max-width: 725px) {*/
+/*body*/
+/*{*/
+/*font-size: 29px;*/
+/*}*/
+/*}*/
+
+/*@media (max-width: 700px) {*/
+/*body*/
+/*{*/
+/*font-size: 28px;*/
+/*}*/
+/*}*/
+
+/*@media (max-width: 675px) {*/
+/*body*/
+/*{*/
+/*font-size: 27px;*/
+/*}*/
+/*}*/
+
+@media (max-width: 640px) {
+    body
+    {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 625px) {
+    body
+    {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 600px) {
+    body
+    {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 575px) {
+    body
+    {
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 550px) {
+    body
+    {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 525px) {
+    body
+    {
+        font-size: 21px;
+    }
+}
+
+@media (max-width: 500px) {
+    body
+    {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 475px) {
+    body
+    {
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 450px) {
+    body
+    {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 425px) {
+    body
+    {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 400px) {
+    body
+    {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 375px) {
+    body
+    {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 350px) {
+    body
+    {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 325px) {
+    body
+    {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 300px) {
+    body
+    {
+        font-size: 12px;
+    }
+}
